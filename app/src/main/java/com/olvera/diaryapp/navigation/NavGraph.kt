@@ -7,6 +7,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.olvera.diaryapp.presentation.screens.auth.AuthenticationScreen
 import com.olvera.diaryapp.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
 
 @Composable
@@ -28,7 +29,10 @@ fun SetupNavGraph(
 
 fun NavGraphBuilder.authenticationRoute() {
     composable(route = Screen.Authentication.route) {
-
+        AuthenticationScreen(
+            loadingState = false,
+            onButtonClicked = {}
+        )
     }
 }
 
