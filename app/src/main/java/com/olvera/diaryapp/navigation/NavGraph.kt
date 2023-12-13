@@ -1,8 +1,6 @@
 package com.olvera.diaryapp.navigation
 
-
 import androidx.compose.material3.DrawerValue
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -102,7 +100,6 @@ fun NavGraphBuilder.authenticationRoute(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 fun NavGraphBuilder.homeRoute(
     navigateToWrite: () -> Unit,
     navigateToAuth: () -> Unit
